@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.poetry]
+name = "example_package"
+version = "0.1.1"
+
+# Requirements
+[tool.poetry.dependencies]
+python = "^3.7"
+
+classifiers = [
+     "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+"numpy==1.21.6.*"
+]
+
+include = ["example_package/config/config.json","example_package/config/poetry.json"]
